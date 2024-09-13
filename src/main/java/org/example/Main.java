@@ -2,17 +2,18 @@ package org.example;
 
 import org.example.wordsAlgorithm.palyndromAlgorithm;
 import org.example.numeralAlgorithms.factorialAlgorithm;
+import org.example.numeralAlgorithms.pairUnpairNumbers;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         while (true) {
-            System.out.println("Select option:");
+            System.out.println("#".repeat(15) +"\nSelect option:");
             System.out.println("1: Check palindrome");
             System.out.println("2: Check factorial");
-            System.out.println("3: Exit");
+            System.out.println("3: Check pair/unpair numbers");
+            System.out.println("X: Exit");
 
             String option = sc.nextLine();
 
@@ -27,6 +28,10 @@ public class Main {
                     f.checkFactorial();
                     break;
                 case "3":
+                    pairUnpairNumbers p = new pairUnpairNumbers();
+                    p.checkPairUnpairNumbers();
+                    break;
+                case "x":
                     System.out.println("Exiting program.");
                     sc.close();
                     return;
