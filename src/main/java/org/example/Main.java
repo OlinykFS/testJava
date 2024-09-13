@@ -14,19 +14,19 @@ public class Main {
             System.out.println("2: Check factorial");
             System.out.println("3: Exit");
 
-            int option = sc.nextInt();
-            sc.nextLine();
+            String option = sc.nextLine();
+
 
             switch (option) {
-                case 1:
+                case "1":
                     palyndromAlgorithm pal = new palyndromAlgorithm();
                     pal.checkPalindromeAlgorithm();
                     break;
-                case 2:
+                case "2":
                     factorialAlgorithm f = new factorialAlgorithm();
                     f.checkFactorial();
                     break;
-                case 3:
+                case "3":
                     System.out.println("Exiting program.");
                     sc.close();
                     return;

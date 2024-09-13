@@ -11,7 +11,7 @@ public class factorialAlgorithm {
             String input = sc.nextLine();
 
             if (input.trim().equalsIgnoreCase("exit")) {
-                System.out.println("Exiting factorial calculation.");
+                System.out.println("-".repeat(17) + "\nfactorial Exit" + "\n-".repeat(4));
                 break;
             }
 
@@ -30,7 +30,5 @@ public class factorialAlgorithm {
                 System.out.println("Invalid input. Please enter a valid integer or 'exit'.");
             }
         }
-
-        sc.close();
     }
 }

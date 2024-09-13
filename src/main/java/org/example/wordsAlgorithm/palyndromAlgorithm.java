@@ -11,7 +11,7 @@ public class palyndromAlgorithm {
             String s = sc.nextLine();
 
             if (s.trim().equalsIgnoreCase("exit")) {
-                System.out.println("Goodbye!");
+                System.out.println("-".repeat(17) + "\nPalyndrom Exit" + "\n-".repeat(4));
                 break;
             }
 
@@ -27,6 +27,5 @@ public class palyndromAlgorithm {
             }
         }
 
-        sc.close(); // Закрытие сканера
     }
 }
