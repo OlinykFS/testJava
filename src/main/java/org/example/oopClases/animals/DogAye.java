@@ -31,5 +31,8 @@ public class DogAye extends AnimalAye {
         int age = sc.nextInt();
         setAge(age);
         System.out.println("Your eblan is " + getName() + " " + getAge() + " years old");
+        System.out.println("Press Enter to continue");
+        sc.nextLine();
+        sc.nextLine();
     }
 }
