@@ -1,9 +1,11 @@
 package org.example;
 
+import org.example.oopClases.AnimalAye;
 import org.example.wordsAlgorithm.palyndromAlgorithm;
 import org.example.numeralAlgorithms.factorialAlgorithm;
 import org.example.numeralAlgorithms.pairUnpairNumbers;
 import org.example.numeralAlgorithms.calculator;
+import org.example.oopClases.animals.DogAye;
 import java.util.Scanner;
 
 public class Main {
@@ -15,6 +17,7 @@ public class Main {
             System.out.println("2: Check factorial");
             System.out.println("3: Check pair/unpair numbers");
             System.out.println("4: Calculator (+,-,:,*)");
+            System.out.println("5: Sozdat Eblana");
             System.out.println("X: Exit");
 
             String option = sc.nextLine();
@@ -36,6 +39,11 @@ public class Main {
                 case "4":
                     calculator c = new calculator();
                     c.Calculate();
+                    break;
+                case "5":
+                    DogAye dog = new DogAye("Eblan", 9);
+                    dog.eat();
+                    dog.bark();
                     break;
                 case "x":
                     System.out.println("Exiting program.");
