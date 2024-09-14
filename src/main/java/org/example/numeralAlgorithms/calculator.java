@@ -10,23 +10,27 @@ public class calculator {
         System.out.println("Enter sec number");
         int sec = sc.nextInt();
         System.out.println("Enter operation (+,-,:,*)");
-        String op = sc.nextLine();
-
+        String op = sc.next();
+        int result;
         switch(op){
             case "+":
-                int result = num + sec;
+                 result = num + sec;
                 System.out.println("The result is: " + result);
                 break;
             case "-":
-                result = num - sec;
+                 result = num - sec;
                 System.out.println("The result is: " + result);
                 break;
             case ":":
-                result = num / sec;
-                System.out.println("The result is: " + result);
-                break;
+                if (num == 0 || sec == 0){
+                    System.out.println("na 0 delit nelzia");
+                } else {
+                    result = num / sec;
+                    System.out.println("The result is: " + result);
+                    break;
+                }
             case "*":
-                result = num * sec;
+                 result = num * sec;
                 System.out.println("The result is: " + result);
                 break;
         }
