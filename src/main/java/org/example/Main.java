@@ -42,9 +42,8 @@ public class Main {
                     c.calculate();
                     break;
                 case "5":
-                    DogAye dog = new DogAye("Eblan", 9);
-                    dog.eat();
-                    dog.bark();
+                    DogAye dog = new DogAye();
+                    dog.SozdatEblana();
                     break;
                 case "6":
                     kubik kubik = new kubik();
