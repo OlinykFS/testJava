@@ -1,6 +1,5 @@
 package org.example;
 
-import org.example.oopClases.AnimalAye;
 import org.example.wordsAlgorithm.palyndromAlgorithm;
 import org.example.numeralAlgorithms.factorialAlgorithm;
 import org.example.numeralAlgorithms.pairUnpairNumbers;
@@ -38,7 +37,7 @@ public class Main {
                     break;
                 case "4":
                     calculator c = new calculator();
-                    c.Calculate();
+                    c.calculate();
                     break;
                 case "5":
                     DogAye dog = new DogAye("Eblan", 9);
