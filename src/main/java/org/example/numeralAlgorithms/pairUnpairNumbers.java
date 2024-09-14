@@ -17,8 +17,8 @@ public class pairUnpairNumbers {
             System.out.println("Ostalos: " + (length - i));
             arr[i] = sc.nextInt();
         }
-        List<Integer> pair = new ArrayList<Integer>();
-        List<Integer> unpair = new ArrayList<Integer>();
+        List<Integer> pair = new ArrayList<>();
+        List<Integer> unpair = new ArrayList<>();
 
         for (int num : arr){
             if (num % 2 == 0){

@@ -27,7 +27,7 @@ public class factorialAlgorithm {
                     System.out.println("Factorial: " + factorial + " for number: " + n);
                 }
             } catch (NumberFormatException e) {
-                System.out.println("Invalid input. Please enter a valid integer or 'exit'.");
+                System.out.println("Invalid enter a valid or 'exit'.");
             }
         }
     }
