@@ -5,6 +5,7 @@ import org.example.numeralAlgorithms.factorialAlgorithm;
 import org.example.numeralAlgorithms.pairUnpairNumbers;
 import org.example.numeralAlgorithms.calculator;
 import org.example.oopClases.animals.DogAye;
+import org.example.games.kubik;
 import java.util.Scanner;
 
 public class Main {
@@ -17,6 +18,7 @@ public class Main {
             System.out.println("3: Check pair/unpair numbers");
             System.out.println("4: Calculator (+,-,:,*)");
             System.out.println("5: Sozdat Eblana");
+            System.out.println("6: Kubik");
             System.out.println("X: Exit");
 
             String option = sc.nextLine();
@@ -43,6 +45,10 @@ public class Main {
                     DogAye dog = new DogAye("Eblan", 9);
                     dog.eat();
                     dog.bark();
+                    break;
+                case "6":
+                    kubik kubik = new kubik();
+                    kubik.kubikDice();
                     break;
                 case "x":
                     System.out.println("Exiting program.");
