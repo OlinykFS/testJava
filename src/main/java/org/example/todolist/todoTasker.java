@@ -19,19 +19,24 @@ public class todoTasker {
             System.out.println("5. Exit");
 
             String op = sc.nextLine();
-
+            String taskName;
             switch(op){
                 case "1":
-
-                    System.out.println("Enter the task name:");
-                    String taskName = sc.nextLine();
-                    System.out.println("Enter the task description:");
-                    String taskDescription = sc.nextLine();
-                    task task = new task(taskName, taskDescription);
-                    tasks.add(task);
-                    System.out.println("Task \"" + taskName + "\" added successfully.");
-                    break;
-
+                    do {
+                        System.out.println("Enter the task name:");
+                        taskName = sc.nextLine();
+                        System.out.println("Enter the task description:");
+                        String taskDescription = sc.nextLine();
+                        task task = new task(taskName, taskDescription);
+                        tasks.add(task);
+                        System.out.println("Task \"" + taskName + "\" added successfully.");
+                        System.out.println("Do you want to continue? (y/n)");
+                        String repeat = sc.nextLine();
+                        if (!repeat.equalsIgnoreCase("y")) {
+                            break;
+                        }
+                    }while (true);
+                        break;
                 case "2":
 
                     if (tasks.isEmpty()) {
@@ -64,7 +69,6 @@ public class todoTasker {
                     break;
 
                 case "4":
-
                     System.out.println("Enter the task name to search:");
                     taskName = sc.nextLine();
                     boolean found = false;
@@ -80,7 +84,6 @@ public class todoTasker {
                     break;
 
                 case "5":
-
                     System.out.println("Exiting...");
                     return;
 

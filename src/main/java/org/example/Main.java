@@ -18,8 +18,9 @@ public class Main {
             System.out.println("2: Check factorial");
             System.out.println("3: Check pair/unpair numbers");
             System.out.println("4: Calculator (+,-,:,*)");
-            System.out.println("5: Sozdat Eblana");
+            System.out.println("5: Sozdat Dog");
             System.out.println("6: Kubik");
+            System.out.println("7: Tasker");
             System.out.println("X: Exit");
 
             String option = sc.nextLine();
