@@ -6,6 +6,7 @@ import org.example.numeralAlgorithms.pairUnpairNumbers;
 import org.example.numeralAlgorithms.calculator;
 import org.example.oopClases.animals.DogAye;
 import org.example.games.kubik;
+import org.example.todolist.todoTasker;
 import java.util.Scanner;
 
 public class Main {
@@ -48,6 +49,10 @@ public class Main {
                 case "6":
                     kubik kubik = new kubik();
                     kubik.kubikDice();
+                    break;
+                case "7":
+                    todoTasker task = new todoTasker();
+                    task.letsTodoTasker();
                     break;
                 case "x":
                     System.out.println("Exiting program.");
