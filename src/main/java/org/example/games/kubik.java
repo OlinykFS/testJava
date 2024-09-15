@@ -11,14 +11,13 @@ public class kubik {
             return;
         }
         Random rand = new Random();
-        int[] dice = new int[kolichestvo];
+
         int sum = 0;
 
         System.out.println("Dice Result");
 
         for(int i = 0; i < kolichestvo; i++){
             int value = rand.nextInt(6) + 1;
-            dice[i] = value;
             sum += value;
             System.out.println("Kubik " + (i + 1) + ": " + value);
         }
