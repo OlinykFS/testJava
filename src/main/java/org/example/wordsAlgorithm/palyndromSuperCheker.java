@@ -12,7 +12,6 @@ public class palyndromSuperCheker {
             while (left < right && !Character.isLetterOrDigit(word.charAt(right))){
                 right--;
             }
-
             if(Character.toLowerCase(word.charAt(left)) != Character.toLowerCase(word.charAt(right))){
                 return false;
             }

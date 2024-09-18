@@ -9,6 +9,7 @@ import org.example.games.kubik;
 import org.example.todolist.todoTasker;
 import org.example.wordsAlgorithm.WordsScanner;
 import org.example.wordsAlgorithm.palyndromSuperCheker;
+import org.example.numeralAlgorithms.UniqueSum;
 import java.util.Scanner;
 
 public class Main {
@@ -25,6 +26,7 @@ public class Main {
             System.out.println("7: Tasker");
             System.out.println("8: Words Scanner");
             System.out.println("9: Palyndrom Algorithm Super");
+            System.out.println("10: Check Unique number sum (Enter number like this 1 2 2 3 4 5)");
             System.out.println("X: Exit");
 
             String option = sc.nextLine();
@@ -68,9 +70,27 @@ public class Main {
                     System.out.println("Enter the mega palyndrom");
                     String word = sc.nextLine();
                     boolean result = psp.palyndromSuper(word);
-                    System.out.println("this " + word + " is " + result);
+                    if(result){
+                        System.out.println("This " + word + " is a palyndrome");
+                    } else {
+                        System.out.println("This " + word + " is not a palyndrome");
+                    }
                     System.out.println("Press enter to continue");
                     sc.nextLine();
+
+                    break;
+                case "10":
+                    System.out.println("Enter list of number");
+                    String number = sc.nextLine();
+                    String[] numbers = number.split(" ");
+                    int[] nums = new int[numbers.length];
+                    for(int i = 0; i < numbers.length; i++){
+                        nums[i] = Integer.parseInt(numbers[i]);
+                    }
+                    UniqueSum USum = new UniqueSum();
+                    int iresult = USum.sumOfUnique(nums);
+                    System.out.println("result of sum unique numbers is  " + iresult);
+                    System.out.println("Press enter to continue");
                     sc.nextLine();
                     break;
                 case "x":
