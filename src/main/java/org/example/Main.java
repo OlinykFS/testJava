@@ -7,6 +7,7 @@ import org.example.numeralAlgorithms.calculator;
 import org.example.oopClases.animals.DogAye;
 import org.example.games.kubik;
 import org.example.todolist.todoTasker;
+import org.example.wordsAlgorithm.WordsScanner;
 import java.util.Scanner;
 
 public class Main {
@@ -21,6 +22,7 @@ public class Main {
             System.out.println("5: Sozdat Dog");
             System.out.println("6: Kubik");
             System.out.println("7: Tasker");
+            System.out.println("8: Words Scanner");
             System.out.println("X: Exit");
 
             String option = sc.nextLine();
@@ -54,6 +56,10 @@ public class Main {
                 case "7":
                     todoTasker task = new todoTasker();
                     task.letsTodoTasker();
+                    break;
+                case "8":
+                    WordsScanner wordsScanner = new WordsScanner();
+                    wordsScanner.StringChecker();
                     break;
                 case "x":
                     System.out.println("Exiting program.");
