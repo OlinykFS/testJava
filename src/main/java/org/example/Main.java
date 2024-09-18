@@ -10,6 +10,7 @@ import org.example.todolist.todoTasker;
 import org.example.wordsAlgorithm.WordsScanner;
 import org.example.wordsAlgorithm.palyndromSuperCheker;
 import org.example.numeralAlgorithms.UniqueSum;
+import org.example.numeralAlgorithms.LargestNumber;
 import java.util.Scanner;
 
 public class Main {
@@ -27,6 +28,7 @@ public class Main {
             System.out.println("8: Words Scanner");
             System.out.println("9: Palyndrom Algorithm Super");
             System.out.println("10: Check Unique number sum (Enter number like this 1 2 2 3 4 5)");
+            System.out.println("11: Check Largest number sum of list (Enter number like this 1 2 2 3 4 5)");
             System.out.println("X: Exit");
 
             String option = sc.nextLine();
@@ -92,6 +94,18 @@ public class Main {
                     System.out.println("result of sum unique numbers is  " + iresult);
                     System.out.println("Press enter to continue");
                     sc.nextLine();
+                    break;
+                case "11":
+                    System.out.println("Enter list of number");
+                    String numsS = sc.nextLine();
+                    String[] Lnums = numsS.split(" ");
+                    int[] nums2 = new int[Lnums.length];
+                    for(int i = 0; i < Lnums.length; i++){
+                        nums2[i] = Integer.parseInt(Lnums[i]);
+                    }
+                    LargestNumber lNum = new LargestNumber();
+                    String lresult = lNum.largestNumber(nums2);
+                    System.out.println("result of largest number is  " + lresult);
                     break;
                 case "x":
                     System.out.println("Exiting program.");
