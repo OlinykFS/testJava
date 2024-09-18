@@ -35,7 +35,6 @@ public class WordsScanner {
             System.out.println("Total digits: " + digitCount);
             System.out.println("Total spaces: " + spaceCount);
             System.out.println("Total specials: " + specialCharCount);
-
         }
     }
 }

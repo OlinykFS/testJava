@@ -8,6 +8,7 @@ import org.example.oopClases.animals.DogAye;
 import org.example.games.kubik;
 import org.example.todolist.todoTasker;
 import org.example.wordsAlgorithm.WordsScanner;
+import org.example.wordsAlgorithm.palyndromSuperCheker;
 import java.util.Scanner;
 
 public class Main {
@@ -23,6 +24,7 @@ public class Main {
             System.out.println("6: Kubik");
             System.out.println("7: Tasker");
             System.out.println("8: Words Scanner");
+            System.out.println("9: Palyndrom Algorithm Super");
             System.out.println("X: Exit");
 
             String option = sc.nextLine();
@@ -60,6 +62,16 @@ public class Main {
                 case "8":
                     WordsScanner wordsScanner = new WordsScanner();
                     wordsScanner.StringChecker();
+                    break;
+                case "9":
+                    palyndromSuperCheker psp = new palyndromSuperCheker();
+                    System.out.println("Enter the mega palyndrom");
+                    String word = sc.nextLine();
+                    boolean result = psp.palyndromSuper(word);
+                    System.out.println("this " + word + " is " + result);
+                    System.out.println("Press enter to continue");
+                    sc.nextLine();
+                    sc.nextLine();
                     break;
                 case "x":
                     System.out.println("Exiting program.");
