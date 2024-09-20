@@ -12,6 +12,7 @@ import org.example.wordsAlgorithm.palyndromSuperCheker;
 import org.example.numeralAlgorithms.UniqueSum;
 import org.example.numeralAlgorithms.LargestNumber;
 import org.example.numeralAlgorithms.DifferentWaysToAddParentheses;
+import org.example.numeralAlgorithms.megaPalyndromCrafter;
 import java.util.Scanner;
 
 public class Main {
@@ -31,6 +32,7 @@ public class Main {
             System.out.println("10: Check Unique number sum (Enter number like this 1 2 2 3 4 5)");
             System.out.println("11: Check Largest number sum of list (Enter number like this 1 2 2 3 4 5)");
             System.out.println("12: Check different ways to add parentheses");
+            System.out.println("13: Craft shortest palindrome");
             System.out.println("X: Exit");
 
             String option = sc.nextLine();
@@ -116,6 +118,12 @@ public class Main {
                     System.out.println("expression is  " + dfwtd.diffWaysToCompute(expression));
                     System.out.println("Press enter to continue");
                     sc.nextLine();
+                    break;
+                case "13":
+                    System.out.println("Enter palindrome String for example : aacecaaa ");
+                    String ayeString = sc.nextLine();
+                    megaPalyndromCrafter crafter = new megaPalyndromCrafter();
+                    System.out.println("result is: " + crafter.shortestPalidrome(ayeString));
                     break;
                 case "x":
                     System.out.println("Exiting program.");
